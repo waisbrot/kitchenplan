@@ -1,5 +1,5 @@
-groups:
-    - groupa
+##groups:
+##    - groupa
 recipes:
     mac_os_x:
         - osxdefaults::set_computer_name
@@ -10,13 +10,34 @@ recipes:
         - osxdefaults::finder_set_preferred_view_style
         - osxdefaults::finder_show_all_files
         - osxdefaults::finder_show_file_extensions
+        - osxdefaults::add_note_to_loginscreen
 attributes:
     osxdefaults:
-        computername: MyComputerName
+        computername: influenza
         finder:
           preferred_view_style: clmv   # column view
+        terminal:
+          profile: "BigGreen"
+        loginmessage: "If found, please call 410-369-8043"
     homebrewalt:
         apps:
             - git-extras
+            - zsh
         cask_apps:
             - sourcetree
+            - qlcolorcode
+            - qlstephen
+            - qlmarkdown
+            - quicklook-json
+            - qlprettypatch
+            - quicklook-csv
+            - betterzipql
+            - suspicious-package
+            - ipaql
+            - flux
+            - divvy
+            - stay
+            - atom
+            - controlplane
+            - wireshark
+            - remote-desktop-connection

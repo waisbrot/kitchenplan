@@ -4,15 +4,17 @@ recipes:                                       # Configs are parsed and every li
     mac_os_x:                                  # Recipes mentioned under "mac_os_x" are installed on OSX and OSX Server
         - homebrewalt::default                 # Installs homebrew and homebrew cask and installs all apps mentioned in the homebrewalt:apps and homebrewalt:cask_apps attributes
         - nodejs::default                      # Installs nodejs and installs all nodejs packages mentioned in the nodejs:apps attribute
-        - osxdefaults::disable_press-and-hold_for_keys_in_favor_of_key_repeat
 attributes:
     homebrewalt:
         apps:
             - git
         cask_apps:
             - google-chrome
+            - virtualbox
+            - xquartz
         cask_fonts:
             - inconsolata
+            - source-code-pro
     nodejs:
         apps:
             - bower
